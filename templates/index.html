@@ -10,12 +10,12 @@
 <body>
     <form action="/search/" method="GET">
         <div class="field has-addons">
-                <div class="control">
-                  <input class="input" name="q" type="text" placeholder="ex: heart">
-                </div>
-                <div class="control">
-                  <input type="submit" class="button is-info" value="Search">
-                </div>
+            <div class="control">
+              <input class="input" name="q" type="text" placeholder="ex: heart">
+            </div>
+            <div class="control">
+              <input type="submit" class="button is-info" value="Search">
+            </div>
         </div>
     </form>
     <table class="table">
@@ -27,7 +27,6 @@
             </tr>
         </thead>
         <tbody>
-            
             {% for i in range (symbols|length) %}
             <tr>
                 <td>{{ names[i] }}</td>
@@ -35,8 +34,6 @@
                 <td>{{ symbols[i] }}</td>
             </tr>    
             {%endfor%}
-                
-
         </tbody>
     </table>
 </body>
