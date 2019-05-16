@@ -10,6 +10,10 @@ Then export and run app
 
 ```
 $ export FLASK_APP=app.py
+```
+```
 $ export FLASK_ENV=development
+```
+```
 $ flask run
 ```
